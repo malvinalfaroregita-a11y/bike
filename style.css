@@ -1,0 +1,239 @@
+
+/* PENGATURAN DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #18251a;
+    background: white;
+}
+
+/* NAVBAR */
+header {
+    background: #101812;
+    padding: 20px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #b8f34a;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #b8f34a;
+}
+
+/* BERANDA */
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    color: white;
+
+    background:
+        linear-gradient(90deg, #101812e8, #10181266),
+        url("https://images.unsplash.com/photo-1511994298241-608e28f14fde?auto=format&fit=crop&w=1600&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.hero h1 span {
+    color: #b8f34a;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* TOMBOL */
+.button {
+    display: inline-block;
+    background: #b8f34a;
+    color: #101812;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* BAGIAN UMUM */
+section {
+    padding: 75px 8%;
+}
+
+/* TENTANG */
+.tentang {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.tentang img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.tentang p {
+    line-height: 1.8;
+    color: #657064;
+    margin: 15px 0;
+}
+
+/* JUDUL */
+.judul {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.judul h2 {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.judul p {
+    color: #657064;
+}
+
+/* MANFAAT */
+.manfaat {
+    background: #f5f8f1;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.card h3 {
+    margin: 12px 0;
+}
+
+.card p {
+    color: #657064;
+    line-height: 1.7;
+}
+
+.icon {
+    font-size: 35px;
+}
+
+/* JENIS SEPEDA */
+.sepeda img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.sepeda h3 {
+    margin-top: 15px;
+}
+
+.sepeda p {
+    color: #657064;
+    margin-top: 8px;
+    line-height: 1.6;
+}
+
+/* KONTAK */
+.kontak {
+    text-align: center;
+    background: #18251a;
+    color: white;
+}
+
+.kontak p {
+    margin: 20px auto;
+    line-height: 1.7;
+}
+
+/* FOOTER */
+footer {
+    background: #101812;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer span {
+    color: #b8f34a;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 39px;
+    }
+
+    .tentang,
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+}
